@@ -27,11 +27,19 @@ bot.on("message", msg => {
 	if(msg.content.startsWith(prefix + "smoke")) { 
 		msg.channel.sendMessage("Weed!")
 	}
-	else 
-		if(msg.content.startsWith(prefix + "who")) { 
+ else 
+	if(msg.content.startsWith(prefix + "who")) { 
         msg.channel.sendMessage("immune is the author!")			
-}
-    else 
+        }
+	else 
+		if(msg.content.startsWith(prefix + "reddit")) {
+			msg.channel.sendMessage("https://www.reddit.com/r/random/")
+		}
+		else
+			if(msg.content.startsWith(prefix + "meme")) {
+				msg.channel.sendMessage("https://www.imgur.com/random")
+			}
+        else 
 
 	    if(msg.content.includes(prefix + "help")) {
 		if(msg.author.bot) return;
