@@ -1,7 +1,7 @@
 /*
 Justin Faler
 12/8/16
-Discord bot for #imgur 
+Discord bot for #pizzagate 
 */
 var Discord = require('discord.js');
 const bot = new Discord.Client(); 
